@@ -61,33 +61,7 @@ printf("\nVamos iniciar!\n");
     printf("Digite o seu pib: \n");
     scanf("%f", &pib2 );
 
-    printf("\nOs resultados finais de comparacao das cartas 1 e 2 foram: \n");
-
-    if (populacao1 > populacao2) {
-        printf("\nA carta 1 tem maior numero de habitantes do que a carta 2\n");
-    } else if (populacao1 < populacao2) {
-        printf("A carta 2 tem maior numero de habitantes do que a carta 1\n");
-    } else { (populacao1 == populacao2); {
-            printf("As cartas tem o mesmo numero de habitantes\n");
-        }
-    }
-
-        if (area1 > area2) {
-        printf("A carta 1 tem maior tamanho de terreno em km2 do que a carta 2\n");
-    } else if (area1 < area2) {
-        printf("A carta 2 tem maior tamanho de terreno em km2 do que a carta 1\n");
-    } else { (area1 == area2); {
-            printf("As cartas tem o mesmo tamanho de terreno em km2\n");
-        }
-    }
-
-    if (estado1 == estado2) {
-        printf("As cartas tem a cidade do mesmo estado\n");
-    } else if (estado1 != estado2) {
-        printf("");
-    }
     
-
     float densidade1 = (float)populacao1 / area1;
     float densidade2 = (float)populacao2 / area2;
 
@@ -95,28 +69,12 @@ printf("\nVamos iniciar!\n");
     printf("Densidade demografica da carta 2: %.2f\n", densidade2);
 
 
-    if (densidade1 > densidade2) {
-        printf("A carta 1 tem maior densidade demografica do que a carta 2.\n");
-    } else if (densidade1 < densidade2) {
-        printf("A carta 2 tem maior densidade demografica do que a carta 1.\n");
-    } else { (densidade1 == densidade2);
-        printf("As cartas tem a mesma densidade demografica.\n");
-    }
-
     float pib_per_capita1 = (float)pib1 / populacao1;
     float pib_per_capita2 = (float)pib2 / populacao2;
 
     printf("\nPib per capita da carta 1: %.2f\n", pib_per_capita1);
     printf("Pib per capita da carta 2: %.2f\n", pib_per_capita2);
 
-    if (pib1 > pib2) {
-        printf("A carta 1 tem maior pib do que a carta 2\n");
-    } else if (pib1 < pib2) {
-        printf("A carta 2 tem maior pib do que a carta 1\n");
-    } else { (pib1 == pib2); {
-            printf("As cartas tem o mesmo pib\n");
-        }
-    }
-
+    
 return 0;
     } 
